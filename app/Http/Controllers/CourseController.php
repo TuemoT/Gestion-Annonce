@@ -17,7 +17,7 @@ use App\Http\Requests\StoreCourseWithEpisodes;
 class CourseController extends Controller
 {
 
-     /* public function index()
+      public function index()
     {
         $courses = Course::with('user')
         ->select('courses.*', DB::raw(
@@ -38,7 +38,7 @@ class CourseController extends Controller
             'courses' => $courses
         ]);
     }
-
+/*
     public function show(int $id)
     {
         $course = Course::where('id', $id)->with('episodes')->first();
