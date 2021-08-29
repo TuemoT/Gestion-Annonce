@@ -15,7 +15,7 @@ use Inertia\Inertia;
 |
 */
 //Route::get('/courses', 'App\Http\Controllers\CourseController@index');
-Route::get('/courses', 'App\Http\Controllers\CourseController@index');
+Route::get('/courses', 'App\Http\Controllers\CourseController@index')->name('courses.index');
 
  Route::get('/', function () {
     return Inertia::render('Welcome', [

@@ -17,12 +17,7 @@ use App\Http\Requests\StoreCourseWithEpisodes;
 class CourseController extends Controller
 {
 
-
-    public function index(){
-
-        return Inertia::render('courses/index');
-    }
-    /* public function index()
+     /* public function index()
     {
         $courses = Course::with('user')
         ->select('courses.*', DB::raw(

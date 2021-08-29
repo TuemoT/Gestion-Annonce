@@ -1,15 +1,19 @@
 <template>
-    
-        <div>
-           <h1> Liste des formations</h1>
-        </div>
-      
+<app-layout>
+<template #header>
+            Liste de toutes les  formations
+        </template>
+
+</app-layout>
+
+
 </template>
-
 <script>
-export default{
 
-}
+
+
+
+
 
 
 

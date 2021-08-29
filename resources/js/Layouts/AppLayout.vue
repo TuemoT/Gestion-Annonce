@@ -18,11 +18,15 @@
                             </div>
 
                             <!-- Navigation Links -->
-                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                                <jet-nav-link :href="route('dashboard')" :active="route().current('dashboard')">
-                                    Dashboard vvvvvv
-                                </jet-nav-link>
-                            </div>
+                            <!-- Navigation Links -->
+                        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                            <jet-nav-link href="/dashboard" :active="$page.currentRouteName == 'dashboard'">
+                                Dashboard
+                            </jet-nav-link>
+                            <jet-nav-link href="/courses" :active="$page.currentRouteName == 'courses.index'">
+                                Toutes Les formations
+                            </jet-nav-link>
+                        </div>
                         </div>
 
                         <div class="hidden sm:flex sm:items-center sm:ml-6">
@@ -40,6 +44,7 @@
                                             </button>
                                         </span>
                                     </template>
+
 
                                     <template #content>
                                         <div class="w-60">
